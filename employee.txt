@@ -1,0 +1,5 @@
+Tom	 	 Manager 	 Sales 	       5000
+Jason 	 Developer 	 Technology 	 5500
+Sanjay 	 Sysadmin	 Technology 	 7000
+Nisha	       Manager 	 Marketing 	       9500
+Randy 	 DBA 		 Technology 	 6000

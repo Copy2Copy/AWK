@@ -1,0 +1,27 @@
+function sort(arr){
+
+        for(i=1;i<ARGC;i++){
+                for(j=i+1;j<ARGC;j++){
+                        if(arr[i]>arr[j]){
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                        }
+                }
+        }
+        print "The Sorted Array is : "
+        for (i=1;i<ARGC;i++){
+                print arr[i];
+        }
+
+
+}
+
+BEGIN{
+        print "The Elements of the Array is Listed Below " ;
+        for (i=1;i<ARGC;i++){
+                print ARGV[i];
+        }
+        sort(ARGV);
+
+}

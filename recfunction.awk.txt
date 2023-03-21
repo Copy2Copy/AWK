@@ -1,0 +1,11 @@
+function factorial(n){
+        if(n==0)
+                return 1
+        else
+                return n*factorial(n-1)
+}
+
+BEGIN{
+  res = factorial(ARGV[1])
+  print "The Factorial of "ARGV[1]" is "res" . ";
+}

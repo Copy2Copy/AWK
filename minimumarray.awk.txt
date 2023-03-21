@@ -1,0 +1,18 @@
+function minimum(arr){
+        min = arr[1]
+        for(i=1;i<ARGC;i++){
+                if(min>arr[i])
+                        min=arr[i];
+        }
+        return min;
+
+}
+
+BEGIN{
+        print "The Elements of the Array is Listed Below " ;
+        for (i=1;i<ARGC;i++){
+                print ARGV[i];
+        }
+        res = minimum(ARGV);
+        print "The Minimum Value of the Array is " res;
+}

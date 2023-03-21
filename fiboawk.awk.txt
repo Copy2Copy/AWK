@@ -1,0 +1,21 @@
+BEGIN {
+    a = 0
+    b = 1
+    if (ARGV[1] == 1) {
+        print a
+   } else if (ARGV[1] == 2) {
+        print a, b
+    } else {
+        print a
+        print b
+        i = 2
+        while (i < ARGV[1]) {
+            c = a + b
+            print c
+            a = b
+            b = c
+            i++
+        }
+    }
+
+}
